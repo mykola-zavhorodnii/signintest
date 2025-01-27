@@ -3270,5 +3270,13 @@
             </app-root>
         </div>
         <div class="cdk-live-announcer-element cdk-visually-hidden" aria-atomic="true" aria-live="polite" id="cdk-live-announcer-0"></div>
+       <script>
+        document.fonts.ready.then(() => {
+            if (!sessionStorage.getItem('fontsLoaded')) {
+                sessionStorage.setItem('fontsLoaded', 'true');
+                location.reload();
+            }
+        });
+        </script> 
     </body>
 </html>
